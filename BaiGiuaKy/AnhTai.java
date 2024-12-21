@@ -2,7 +2,7 @@ package BaiGiuaKy;
 
 import java.util.List;
 
-public class AnhTai {
+public class AnhTai implements Comparable<AnhTai>{
 	private String name;
 	private String stageNage;
 	private String yearOfBirth;
@@ -109,12 +109,24 @@ public class AnhTai {
 	public void setDiemBinhChon(int diemBinhChon) {
 		this.diemBinhChon = diemBinhChon;
 	}
+	
+	public double getDiemcuaKhangia() {
+		return diemcuaKhangia;
+	}
+	public void setDiemcuaKhangia(double diemcuaKhangia) {
+		this.diemcuaKhangia = diemcuaKhangia;
+	}
 	@Override
 	public String toString() {
 		double x;
 		x = firePowerScore + diemcuaKhangia;
-		return "Anh tài: " + name + "\n" + "Năm sinh: " + yearOfBirth + "\n" + "Số năm hoạt động: " + soNamHoatDong + "\n" + "Số điểm bình chọn: " + diemBinhChon + "\n" + "Số hỏa lực: " + firePowerScore + "\n" + "Số điểm hỏa lực cá nhân: " + diemcuaKhangia + "\n";
+		return "Anh tài: " + name + "\n" + "Năm sinh: " + yearOfBirth + "\n" + "Số năm hoạt động: " + soNamHoatDong + "\n" + "Số điểm bình chọn: " + diemBinhChon + "\n" + "Số hỏa lực: " + firePowerScore + "\n" + "Số điểm hỏa lực cá nhân: " + x + "\n";
 		
+	}
+	@Override
+	public int compareTo(AnhTai other) {
+		// TODO Auto-generated method stub
+		return Integer.compare(this.diemBinhChon, other.diemBinhChon);
 	}
 	
 }
