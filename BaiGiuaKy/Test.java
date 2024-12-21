@@ -1,6 +1,7 @@
 package BaiGiuaKy;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class Test {
@@ -190,7 +191,7 @@ public class Test {
 		baihatCaNhan8.put(LienBinhPhat, bai32);
 		baihatCaNhan8.put(NguyenTranDuyNhat, bai33);
 		
-		
+		// Thong tin tat ca cac anh tai 
 		Group g1 = new Group("Anh tài huyền thoại" + "\n", baihatCaNhan, "Quê Hương Tuổi Thơ Tôi & Nếu Có Yêu Tôi");
 		System.out.println(g1);
 		System.out.println("-------------------------------------");
@@ -215,5 +216,49 @@ public class Test {
 		Group g8 = new Group("Quý ông đa tình" + "\n", baihatCaNhan8, "Phía sau 1 cô gái");
 		System.out.println(g8);
 		System.out.println("-------------------------------------");
+		System.out.println("-------------------------------------");
+		
+		
+		System.out.println("Sau vòng Who am i. Số điểm bình chọn của khán giả có như sau." + "\n");
+		
+		TuanHung.setDiemBinhChon(1260);
+		BangKieu.setDiemBinhChon(470);
+		TuLong.setDiemBinhChon(830);
+		HongSon.setDiemBinhChon(390);
+		
+		KayTran.setDiemBinhChon(1100);
+		Soobin.setDiemBinhChon(1190);
+		Cuongseven.setDiemBinhChon(440);
+		KienUng.setDiemBinhChon(230);
+		
+		
+		
+		System.out.println(g1);
+		System.out.println("-------------------------------------");
+		System.out.println(g2);
+		
+		System.out.println("-------------------------------------");
+		System.out.println("Và đây là điểm đầy đủ: " + "\n");
+		
+		TuanHung.setDiemcuaKhangia(180);
+		BangKieu.setDiemcuaKhangia(130);
+		TuLong.setDiemcuaKhangia(160);
+		HongSon.setDiemcuaKhangia(130);
+		
+		KayTran.setDiemcuaKhangia(520);
+		Soobin.setDiemcuaKhangia(480);
+		Cuongseven.setDiemcuaKhangia(230);
+		KienUng.setDiemcuaKhangia(260);
+		
+		AnhTai maxDiemBinhChon = Collections.max(danhsach1);
+		maxDiemBinhChon.setFirePowerScore(300);
+		
+		AnhTai maxDiemBinhChon2 = Collections.max(danhsach2);
+		maxDiemBinhChon2.setFirePowerScore(300);
+		
+		System.out.println(g1);
+		System.out.println("-------------------------------------");
+		System.out.println(g2);
+		
 	}
 }
