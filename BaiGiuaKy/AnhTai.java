@@ -129,19 +129,22 @@ public class AnhTai implements Comparable<AnhTai>{
 		return Integer.compare(this.diemBinhChon, other.diemBinhChon);
 	}
 	public static List<AnhTai> removeTwoLowestFirePower(List<AnhTai> anhTaiList) {
-    if (anhTaiList.size() <= 2) {
-        throw new IllegalArgumentException("Danh sach bi loại.");
+	if (anhTaiList.size() <= 2) {
+        return null; // Không đủ thành viên để loại
     }
+
+    // Sắp xếp danh sách theo điểm hỏa lực tăng dần
     anhTaiList.sort(Comparator.comparingInt(AnhTai::getFirePowerScore));
 
-    List<AnhTai> anhTaiBiLoai = new ArrayList<>();
-    thanhVienBiLoai.add(anhTaiList.get(0));
-    thanhVienBiLoai.add(anhTaiList.get(1));
+    // Lấy 2 thành viên có điểm thấp nhất
+    AnhTai diemthapnhat = anhTaiList.get(0);
+    AnhTai diemthaphai = anhTaiList.get(1);
 
-    
-    anhTaiList.removeAll(anhTaiBiLoai);
+    // Loại bỏ 2 thành viên
+    anhTaiList.remove(diemthapnhat);
+    anhTaiList.remove(diemthaphai);
 
-    return anhTaiBiLoai; 
-	}
+    // Trả về danh sách đã cập nhật
+    return anhTaiList;
 	}
 }
