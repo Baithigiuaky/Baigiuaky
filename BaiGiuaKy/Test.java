@@ -367,28 +367,28 @@ public class Test {
 		baihatnhom8.put(ThanhDuy, bai8);
 		
 		Group gg1 = new Group("Dam Me" + "\n", baihatnhom1, "Ba kể con nghe & Dưới ánh đèn sân khấu");
-		System.out.println(g1);
+		System.out.println(gg1);
 		System.out.println("-------------------------------------");
 		Group gg2 = new Group("Hat" + "\n", baihatnhom2, "Một lần dang dở & Đi qua cầu vồng");
-		System.out.println(g2);
+		System.out.println(gg2);
 		System.out.println("-------------------------------------");
 		Group gg3 = new Group("Ngu Hanh" + "\n", baihatnhom3, "Vợ người ta & Chuyện ba người");
-		System.out.println(g3);
+		System.out.println(gg3);
 		System.out.println("-------------------------------------");
 		Group gg4 = new Group("Tai Sinh" + "\n", baihatnhom4, "Lột xác & Chuyện nhỏ");
-		System.out.println(g4);
+		System.out.println(gg4);
 		System.out.println("-------------------------------------");
 		Group gg5 = new Group("Sao sang" + "\n", baihatnhom5, "Trống cơm");
-		System.out.println(g5);
+		System.out.println(gg5);
 		System.out.println("-------------------------------------");
 		Group gg6 = new Group("Xuan Ha Thu Dong" + "\n", baihatnhom6, "Tỉnh thức sau giấc ngủ đông");
-		System.out.println(g6);
+		System.out.println(gg6);
 		System.out.println("-------------------------------------");
 		Group gg7 = new Group("KK" + "\n", baihatnhom7, "Dịu dàng đến từng phút giây & Bước đến bên em");
-		System.out.println(g7);
+		System.out.println(gg7);
 		System.out.println("-------------------------------------");
 		Group gg8 = new Group("Xuong Rong" + "\n", baihatnhom8, "Áo mùa đông & Trở về");
-		System.out.println(g8);
+		System.out.println(gg8);
 		System.out.println("-------------------------------------")
 			
 	}
