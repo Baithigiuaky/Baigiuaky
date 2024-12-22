@@ -390,6 +390,12 @@ public class Test {
 		Group gg8 = new Group("Xuong Rong" + "\n", baihatnhom8, "Áo mùa đông & Trở về");
 		System.out.println(gg8);
 		System.out.println("-------------------------------------")
-			
+		List<AnhTai> anhTaiList = new ArrayList<>();
+		anhTaiList.add(TuanHung);
+		anhTaiList.add(BangKieu);
+		anhTaiList.add(Cuongseven);
+		for (AnhTai anhTai : anhTaiList) {
+        	System.out.println(anhTai.ktraRank());
+    }	
 	}
 }
