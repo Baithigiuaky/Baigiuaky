@@ -128,21 +128,20 @@ public class AnhTai implements Comparable<AnhTai>{
 		// TODO Auto-generated method stub
 		return Integer.compare(this.diemBinhChon, other.diemBinhChon);
 	}
-	public static void removeTwoLowestFirePower(List<AnhTai> anhTaiList) {
-	    if (anhTaiList.size() <= 2) {
-	        System.out.println("danh sach bi loai!");
-	        return;
-	    }
-	    AnhTai diemthapnhat = anhTaiList.get(0);
-	    AnhTai diemthaphai = anhTaiList.get(1);
-	    
-	   
-	    System.out.println("Loai anh tai: " + diemthapnhat.getName() + " - Điem hoa luc: " + diemthapnhat.getFirePowerScore());
-	    System.out.println("Loai: " + diemthaphai.getName() + " - Điem hoa luc: " + diemthaphai.getFirePowerScore());
-	    
-	   
-	    anhTaiList.remove(diemthapnhat);
-	    anhTaiList.remove(diemthaphai);
+	public static List<AnhTai> removeTwoLowestFirePower(List<AnhTai> anhTaiList) {
+    if (anhTaiList.size() <= 2) {
+        throw new IllegalArgumentException("Danh sach bi loại.");
+    }
+    anhTaiList.sort(Comparator.comparingInt(AnhTai::getFirePowerScore));
+
+    List<AnhTai> anhTaiBiLoai = new ArrayList<>();
+    thanhVienBiLoai.add(anhTaiList.get(0));
+    thanhVienBiLoai.add(anhTaiList.get(1));
+
+    
+    anhTaiList.removeAll(anhTaiBiLoai);
+
+    return anhTaiBiLoai; 
 	}
 	}
 }
