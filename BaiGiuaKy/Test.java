@@ -432,10 +432,14 @@ public class Test {
 			
 	HashMap<ArrayList<AnhTai>, BaiHat> baihatN4v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
 	baihatN4v4.put(ds4v2, baihatn4v2);
+		
 	BangKieu.setFirePowerScore(90);
 	TuLong.setFirePowerScore(120);
 	PhanDinhTung.setFirePowerScore(170);
 	HuyR.setFirePowerScore(40);
+	NguyenTranDuyNhat.setFirePowerScore(270);
+	LienBinhPhat.setFirePowerScore(230);
+	KayTran.setFirePowerScore(130);
 	
 	List<AnhTai> anhTaiList1 = new ArrayList<>();
     anhTaiList1.add(PhanDinhTung);
