@@ -193,31 +193,26 @@ public class Test {
 		
 		// Thong tin tat ca cac anh tai 
 		Group g1 = new Group("Anh tài huyền thoại" + "\n", baihatCaNhan, "Quê Hương Tuổi Thơ Tôi & Nếu Có Yêu Tôi");
-		System.out.println(g1);
-		System.out.println("-------------------------------------");
 		Group g2 = new Group("Nam thần rực lửa" + "\n", baihatCaNhan2, "Nước Hoa");
-		System.out.println(g2);
-		System.out.println("-------------------------------------");
 		Group g3 = new Group("Anh tài sục sôi" + "\n", baihatCaNhan3, "Đón bình minh");
-		System.out.println(g3);
-		System.out.println("-------------------------------------");
 		Group g4 = new Group("Anh tài bí ẩn" + "\n", baihatCaNhan4, "Người lạ ơi");
-		System.out.println(g4);
-		System.out.println("-------------------------------------");
 		Group g5 = new Group("Anh tài nham thạch" + "\n", baihatCaNhan5, "Khiến nó ngầu");
-		System.out.println(g5);
-		System.out.println("-------------------------------------");
 		Group g6 = new Group("Thanh xuân học đường" + "\n", baihatCaNhan6, "Sóng tình");
-		System.out.println(g6);
-		System.out.println("-------------------------------------");
 		Group g7 = new Group("Anh tài đa sắc" + "\n", baihatCaNhan7, "Anh nhà ở đâu thế");
-		System.out.println(g7);
-		System.out.println("-------------------------------------");
 		Group g8 = new Group("Quý ông đa tình" + "\n", baihatCaNhan8, "Phía sau 1 cô gái");
-		System.out.println(g8);
-		System.out.println("-------------------------------------");
-		System.out.println("-------------------------------------");
 		
+		ArrayList<Group> danhsachNhomWhoAmI = new ArrayList<Group>();
+		danhsachNhomWhoAmI.add(g1);
+		danhsachNhomWhoAmI.add(g2);
+		danhsachNhomWhoAmI.add(g3);
+		danhsachNhomWhoAmI.add(g4);
+		danhsachNhomWhoAmI.add(g5);
+		danhsachNhomWhoAmI.add(g6);
+		danhsachNhomWhoAmI.add(g7);
+		danhsachNhomWhoAmI.add(g8);
+		
+		CongDien sanKhauRaMat = new CongDien("Sân Khâu Ra Mắt", "Hãy gọi tôi là", danhsachNhomWhoAmI);
+		System.out.println(sanKhauRaMat);
 		
 		System.out.println("Sau vòng Who am i. Số điểm bình chọn của khán giả có như sau." + "\n");
 		
@@ -259,7 +254,12 @@ public class Test {
 		System.out.println(g1);
 		System.out.println("-------------------------------------");
 		System.out.println(g2);
+		System.out.println("-------------------------------------");
+		System.out.println("-------------------------------------");
+		System.out.println("-------------------------------------");
 		
+		
+		System.out.println("Đây là danh sách thi vòng công diễn 1" + "\n");
 		ArrayList<AnhTai> ds1 = new ArrayList<AnhTai>();
 		ds1.add(STrongTrongHieu);
 		ds1.add(LienBinhPhat);
@@ -309,93 +309,76 @@ public class Test {
 		ds8.add(DuyKhanh);
 		ds8.add(ThanhDuy);
 		
-		BaiHat bai1 = new BaiHat("Ba kể con nghe & Dưới ánh đèn sân khấu", "Nguyễn Hải Phong, Hứa Kim Tuyền,", null, null);
-		HashMap<AnhTai, BaiHat> baihatnhom1 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom1.put(STrongTrongHieu, bai1);
-		baihatnhom1.put(LienBinhPhat, bai1);
-		baihatnhom1.put(NguyenTranDuyNhat, bai1);
-		baihatnhom1.put(TuanHung, bai1);
+		BaiHat baihat1 = new BaiHat("Ba kể con nghe & Dưới ánh đèn sân khấu", "Nguyễn Hải Phong, Hứa Kim Tuyền,", null, null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom1 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom1.put(ds1, baihat1);
 		
-		BaiHat bai2 = new BaiHat("Một lần dang dở & Đi qua cầu vồng", "Nhật Ngân, Mặc Thế Nhân", null, null);
-		HashMap<AnhTai, BaiHat> baihatnhom2 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom2.put(ThanhTrung, bai2);
-		baihatnhom2.put(HaLe, bai2);
-		baihatnhom2.put(DoHoangHiep, bai2);
-		baihatnhom2.put(QuocThien, bai2);
-		baihatnhom2.put(KienUng, bai2);
+		BaiHat baihat2 = new BaiHat("Một lần dang dở & Đi qua cầu vồng", "Nhật Ngân, Mặc Thế Nhân", null, null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom2.put(ds2, baihat2);
 		
-		BaiHat bai3 = new BaiHat("Vợ người ta & Chuyện ba người", "Phan Mạnh Quỳnh, Quốc Dũng", null, null);
-		HashMap<AnhTai, BaiHat> baihatnhom3 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom3.put(PhamKhanhHung, bai3);
-		baihatnhom3.put(TruongTheVinh, bai3);
-		baihatnhom3.put(JunPham, bai3);
-		baihatnhom3.put(BBTran, bai3);
-		baihatnhom3.put(HuyR, bai3);
 		
-		BaiHat bai4 = new BaiHat("Lột xác & Chuyện nhỏ", "Nguyễn Hải Phong, Tuấn Khanh", null, null);
-		HashMap<AnhTai, BaiHat> baihatnhom4 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom4.put(TienLuat, bai4);
-		baihatnhom4.put(DinhTienDat, bai4);
-		baihatnhom4.put(Rhymastic, bai4);
+		BaiHat baihat3 = new BaiHat("Vợ người ta & Chuyện ba người", "Phan Mạnh Quỳnh, Quốc Dũng", null, null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom3 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom3.put(ds3, baihat3);
 		
-		BaiHat bai5 = new BaiHat("Trống cơm", "Dân ca Bắc Bộ", "Charles, APJ", null);
-		HashMap<AnhTai, BaiHat> baihatnhom5 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom5.put(TienLuat, bai5);
-		baihatnhom5.put(DinhTienDat, bai5);
-		baihatnhom5.put(Rhymastic, bai5);
+		BaiHat baihat4 = new BaiHat("Lột xác & Chuyện nhỏ", "Nguyễn Hải Phong, Tuấn Khanh", null, null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom4.put(ds4, baihat4);
 		
-		BaiHat bai6 = new BaiHat("Tỉnh thức sau giấc ngủ đông", "Kai Đinh, Grey D", "Bin Z", null);
-		HashMap<AnhTai, BaiHat> baihatnhom6 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom6.put(BangKieu, bai6);
-		baihatnhom6.put(HongSon, bai6);
-		baihatnhom6.put(StSonThach, bai6);
-		baihatnhom6.put(Binz, bai6);
+		BaiHat baihat5 = new BaiHat("Trống cơm", "Dân ca Bắc Bộ", "Charles, APJ", null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom5 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom5.put(ds5, baihat5);
 		
-		BaiHat bai7 = new BaiHat("Dịu dàng đến từng phút giây & Bước đến bên em", "Lương Bằng Quang, Khắc Hưng", "Neko Lê", "Kay Trần");
-		HashMap<AnhTai, BaiHat> baihatnhom7 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom7.put(PhanDinhTung, bai7);
-		baihatnhom7.put(NekoLe, bai7);
-		baihatnhom7.put(KayTran, bai7);
-		baihatnhom7.put(TangPhuc, bai7);
-		baihatnhom7.put(DangKhoi, bai7);
 		
-		BaiHat bai8 = new BaiHat("Áo mùa đông & Trở về", "Đỗ Nhuận, Dương Thụ", " Bùi Công Nam", null);
-		HashMap<AnhTai, BaiHat> baihatnhom8 = new HashMap<AnhTai, BaiHat>();
-		baihatnhom8.put(ThienMinh, bai8);
-		baihatnhom8.put(BuiCongNam, bai8);
-		baihatnhom8.put(DuyKhanh, bai8);
-		baihatnhom8.put(ThanhDuy, bai8);
+		BaiHat baihat6 = new BaiHat("Tỉnh thức sau giấc ngủ đông", "Kai Đinh, Grey D", "Bin Z", null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom6 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom6.put(ds6, baihat6);
 		
-		Group gg1 = new Group("Dam Me" + "\n", baihatnhom1, "Ba kể con nghe & Dưới ánh đèn sân khấu");
-		System.out.println(gg1);
-		System.out.println("-------------------------------------");
-		Group gg2 = new Group("Hat" + "\n", baihatnhom2, "Một lần dang dở & Đi qua cầu vồng");
-		System.out.println(gg2);
-		System.out.println("-------------------------------------");
-		Group gg3 = new Group("Ngu Hanh" + "\n", baihatnhom3, "Vợ người ta & Chuyện ba người");
-		System.out.println(gg3);
-		System.out.println("-------------------------------------");
-		Group gg4 = new Group("Tai Sinh" + "\n", baihatnhom4, "Lột xác & Chuyện nhỏ");
-		System.out.println(gg4);
-		System.out.println("-------------------------------------");
-		Group gg5 = new Group("Sao sang" + "\n", baihatnhom5, "Trống cơm");
-		System.out.println(gg5);
-		System.out.println("-------------------------------------");
-		Group gg6 = new Group("Xuan Ha Thu Dong" + "\n", baihatnhom6, "Tỉnh thức sau giấc ngủ đông");
-		System.out.println(gg6);
-		System.out.println("-------------------------------------");
-		Group gg7 = new Group("KK" + "\n", baihatnhom7, "Dịu dàng đến từng phút giây & Bước đến bên em");
-		System.out.println(gg7);
-		System.out.println("-------------------------------------");
-		Group gg8 = new Group("Xuong Rong" + "\n", baihatnhom8, "Áo mùa đông & Trở về");
-		System.out.println(gg8);
-		System.out.println("-------------------------------------")
-		List<AnhTai> anhTaiList = new ArrayList<>();
-		anhTaiList.add(TuanHung);
-		anhTaiList.add(BangKieu);
-		anhTaiList.add(Cuongseven);
-		for (AnhTai anhTai : anhTaiList) {
-        	System.out.println(anhTai.ktraRank());
+		BaiHat baihat7 = new BaiHat("Dịu dàng đến từng phút giây & Bước đến bên em", "Lương Bằng Quang, Khắc Hưng", "Neko Lê", "Kay Trần");
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom7 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom7.put(ds7, baihat7);
+	
+		
+		BaiHat baihat8 = new BaiHat("Áo mùa đông & Trở về", "Đỗ Nhuận, Dương Thụ", " Bùi Công Nam", null);
+		HashMap<ArrayList<AnhTai>, BaiHat> baihatnhom8 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+		baihatnhom8.put(ds8, baihat8);
+	
+		Group damme = new Group("Đam mê", baihatnhom1,0);
+		Group hat = new Group("Hát", baihatnhom2,0);
+		Group nguHanh = new Group("Ngũ hành", baihatnhom3,0);
+		Group taiSinh = new Group("Tái sinh", baihatnhom4,0);
+		Group saoSang = new Group("Sao sáng", baihatnhom5,0);
+		Group xuanHaThuDong = new Group("Xuân hạ thu đông", baihatnhom6,0);
+		Group kk = new Group("KK", baihatnhom7,0);
+		Group xuongRong = new Group("Xương rồng", baihatnhom8,0);
+		
+		ArrayList<Group> danhsachCongDien1 = new ArrayList<Group>();
+		danhsachCongDien1.add(damme);
+		danhsachCongDien1.add(hat);
+		danhsachCongDien1.add(nguHanh);
+		danhsachCongDien1.add(taiSinh);
+		danhsachCongDien1.add(saoSang);
+		danhsachCongDien1.add(xuanHaThuDong);
+		danhsachCongDien1.add(kk);
+		danhsachCongDien1.add(xuongRong);
+		
+		CongDien congdien1 = new CongDien("CD1", "Người thiếu niên thuở nào", danhsachCongDien1);
+		for (Group group : danhsachCongDien1) {
+			System.out.println(group.getBaihatnhom());
+		}
+		
+		damme.setDiemCuoiCung(760);
+		hat.setDiemCuoiCung(650);
+		nguHanh.setDiemCuoiCung(1660);
+		taiSinh.setDiemCuoiCung(900);
+		saoSang.setDiemCuoiCung(1490);
+		xuanHaThuDong.setDiemCuoiCung(1680);
+		kk.setDiemCuoiCung(1060);
+		xuongRong.setDiemCuoiCung(1750);
+		
+		Group.findTwoGroupsWithLowestScores(danhsachCongDien1);
+		
 			
 	ArrayList<AnhTai> ds1v2 = new ArrayList<AnhTai>();
 	ds1v2.add(PhanDinhTung);
