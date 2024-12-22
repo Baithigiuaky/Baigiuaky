@@ -432,7 +432,44 @@ public class Test {
 			
 	HashMap<ArrayList<AnhTai>, BaiHat> baihatN4v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
 	baihatN4v4.put(ds4v2, baihatn4v2);
-			
+	BangKieu.setFirePowerScore(90);
+	TuLong.setFirePowerScore(120);
+	PhanDinhTung.setFirePowerScore(170);
+	HuyR.setFirePowerScore(40);
+	
+	List<AnhTai> anhTaiList1 = new ArrayList<>();
+    anhTaiList1.add(PhanDinhTung);
+    anhTaiList1.add(NguyenTranDuyNhat);
+    anhTaiList1.add(TangPhuc);
+    anhTaiList1.add(LienBinhPhat);
+    anhTaiList1.add(STrongTrongHieu);
+    anhTaiList1.add(KayTran);
+    anhTaiList1.add(BangKieu);
+    anhTaiList1.add(ThanhDuy);
+    anhTaiList1.add(BuiCongNam);
+    anhTaiList1.add(Binz);
+    anhTaiList1.add(ThienMinh);
+    anhTaiList1.add(DuyKhanh);
+    anhTaiList1.add(JunPham);
+    anhTaiList1.add(HuyR);
+    anhTaiList1.add(HaLe);
+    anhTaiList1.add(TruongTheVinh);
+    anhTaiList1.add(KienUng);
+    anhTaiList1.add(BBTran);
+    anhTaiList1.add(TuLong);
+    anhTaiList1.add(DinhTienDat);
+    anhTaiList1.add(QuocThien);
+    anhTaiList1.add(Cuongseven);
+    anhTaiList1.add(Rhymastic);
+    anhTaiList1.add(Soobin);
+	
+    AnhTai.removeTwoLowestFirePower(anhTaiList1);
+    
+   
+    System.out.println("Danh sách còn lại:");
+    for (AnhTai anhTai : anhTaiList1) {
+        System.out.println(anhTai.getName() + " - Điểm hỏa lực: " + anhTai.getFirePowerScore());
+    }		
 			vog4
 		ArrayList<AnhTai> ds1v4 = new ArrayList<AnhTai>();
 	ds1v4.add(NekoLe);
