@@ -396,6 +396,53 @@ public class Test {
 		anhTaiList.add(Cuongseven);
 		for (AnhTai anhTai : anhTaiList) {
         	System.out.println(anhTai.ktraRank());
+
+			vog4
+		ArrayList<AnhTai> ds1v4 = new ArrayList<AnhTai>();
+	ds1v4.add(NekoLe);
+	ds1v4.add(TangPhuc);
+	ds1v4.add(ThienMinh);
+	ds1v4.add(BBTran);
+	ds1v4.add(StSonThach);
+	ds1v4.add(KayTran);
+	ds1v4.add(BuiCongNam);
+	ArrayList<AnhTai> ds2v4 = new ArrayList<AnhTai>();
+	ds2v4.add(DinhTienDat);
+	ds2v4.add(TienLuat);
+	ds2v4.add(QuocThien);
+	ds2v4.add(Binz);
+	ds2v4.add(Rhymastic);
+	ds2v4.add(DuyKhanh);
+	ArrayList<AnhTai> ds3v4 = new ArrayList<AnhTai>();
+	ds3v4.add(BangKieu);
+	ds3v4.add(PhanDinhTung);
+	ds3v4.add(PhamKhanhHung);
+	ds3v4.add(TruongTheVinh);
+	ds3v4.add(DoHoangHiep);
+	ds3v4.add(NguyenTranDuyNhat);
+	ArrayList<AnhTai> ds4v4 = new ArrayList<AnhTai>();
+	ds4v4.add(TuLong);
+	ds4v4.add(TuanHung);
+	ds4v4.add(DangKhoi);
+	ds4v4.add(ThanhDuy);
+	ds4v4.add(Cuongseven);
+	ds4v4.add(JunPham);
+	ds4v4.add(STrongTrongHieu);
+	ds4v4.add(Soobin);
+	
+	BaiHat baihatn1v4 = new BaiHat("Mưa trên phố Huế", "Minh Kỳ", null, null);
+	BaiHat baihatn2v4 = new BaiHat("Đào liễu", "Cheo Co", null, null);
+	BaiHat baihatn3v4 = new BaiHat("Dạ cổ hoài lang", "Cao Văn Lầu", null, null);
+	BaiHat baihatn4v4 = new BaiHat("Chiếc khăn piêu", "Doãn Nho", null, null);
+	
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN1v4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN1v4.put(ds1v4, baihatn1v4);
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN2v4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN2v4.put(ds2v4, baihatn2v4);
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN3v4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN3v4.put(ds3v4, baihatn3v4);
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN4v4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN4v4.put(ds4v4, baihatn4v4);
     }	
 	}
 }
