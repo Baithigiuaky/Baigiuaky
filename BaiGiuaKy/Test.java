@@ -459,8 +459,49 @@ public class Test {
     for (AnhTai anhTai : anhTaiList1) {
         System.out.println(anhTai.getName() + " - Điểm hỏa lực: " + anhTai.getFirePowerScore());
     }		
-			vog4
-		ArrayList<AnhTai> ds1v4 = new ArrayList<AnhTai>();
+	BaiHat baidonca1 = new BaiHat("Sao cũng được", "Binz", null, null);
+	BaiHat baidonca2 = new BaiHat("Một vòng Việt Nam", "Đông Thiên Đức", null, null);
+	BaiHat baidonca3 = new BaiHat("Thuận nước đẩy thuyền", "", null, null);
+	BaiHat baidonca4 = new BaiHat("Vượt lên mọi thử thách", "Phúc Bồ" ,null, null);
+	BaiHat baisongca1 = new BaiHat("Đêm cô đơn", "Trung Kiên, Rhymastic", null, null);
+	BaiHat baisongca2 = new BaiHat("Gọi anh", "DuongThu", null, null);
+	BaiHat baisongca3 = new BaiHat("Chuyện nhà bé thôi, con đừng về", "Kai Đinh, Kay Trần, Bùi Công Nam", null, null);
+	BaiHat baisongca4 = new BaiHat("12h03", "APJ" ,null, null);
+	HashMap<AnhTai, BaiHat> tietMucDonCa = new HashMap<AnhTai, BaiHat>();
+	tietMucDonCa.put(TienLuat, baidonca1);
+	tietMucDonCa.put(PhanDinhTung, baidonca2);
+	tietMucDonCa.put(StSonThach, baidonca3);
+	tietMucDonCa.put(TuanHung, baidonca4);
+	
+	ArrayList<AnhTai> danhsachsogca1 = new ArrayList<AnhTai>();
+	danhsachsogca1.add(QuocThien);
+	danhsachsogca1.add(Rhymastic);
+	
+	ArrayList<AnhTai> danhsachsogca2 = new ArrayList<AnhTai>();
+	danhsachsogca2.add(PhamKhanhHung);
+	danhsachsogca2.add(DoHoangHiep);
+	
+	ArrayList<AnhTai> danhsachsogca3 = new ArrayList<AnhTai>();
+	danhsachsogca3.add(KayTran);
+	danhsachsogca3.add(BuiCongNam);
+	
+	ArrayList<AnhTai> danhsachsogca4 = new ArrayList<AnhTai>();
+	danhsachsogca1.add(Cuongseven);
+	danhsachsogca1.add(STrongTrongHieu);
+	
+
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatsogcanhom1 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatsogcanhom1.put(danhsachsogca1, baisongca1);
+	
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatsogcanhom2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatsogcanhom2.put(danhsachsogca2, baisongca2);
+	
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatsogcanhom3 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatsogcanhom3.put(danhsachsogca3, baisongca3);
+	
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatsogcanhom4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatsogcanhom4.put(danhsachsogca4, baisongca4);
+	ArrayList<AnhTai> ds1v4 = new ArrayList<AnhTai>();
 	ds1v4.add(NekoLe);
 	ds1v4.add(TangPhuc);
 	ds1v4.add(ThienMinh);
@@ -505,6 +546,10 @@ public class Test {
 	baihatN3v4.put(ds3v4, baihatn3v4);
 	HashMap<ArrayList<AnhTai>, BaiHat> baihatN4v4 = new HashMap<ArrayList<AnhTai>, BaiHat>();
 	baihatN4v4.put(ds4v4, baihatn4v4);
+	Group chinmuoi = new Group("chín muồi", baihatN1v4,0);
+	Group tre = new Group("Trẻ", baihatN2v4,0);
+	Group mutgung = new Group("Muc Gung", baihatN3v4,0);
+	Group calon = new Group("Ca Lon", baihatN4v4,0
     }	
 	}
 }
