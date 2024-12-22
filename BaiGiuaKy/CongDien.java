@@ -36,8 +36,8 @@ public class CongDien {
 	}
 	@Override
 	public String toString() {
-		return "CongDien [idCongDien=" + idCongDien + ", chuDeCongDien=" + chuDeCongDien + ", danhSachCongDien="
-				+ danhSachCongDien + "]";
+		return "Mã Công Diễn: " + idCongDien + "\n" + "Chủ Đề Công Diễn: " +chuDeCongDien + "\n" + "Danh Sách Công Diễn: " +"\n"+ "\n"
+				+ danhSachCongDien + "\n";
 	}
 	
 }
