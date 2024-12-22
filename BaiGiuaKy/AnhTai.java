@@ -130,17 +130,17 @@ public class AnhTai implements Comparable<AnhTai>{
 	}
 	public static List<AnhTai> removeTwoLowestFirePower(List<AnhTai> anhTaiList) {
 	if (anhTaiList.size() <= 2) {
-        return null; // Không đủ thành viên để loại
+        return null; // Không đủ anh tài để loại
     }
 
     // Sắp xếp danh sách theo điểm hỏa lực tăng dần
     anhTaiList.sort(Comparator.comparingInt(AnhTai::getFirePowerScore));
 
-    // Lấy 2 thành viên có điểm thấp nhất
+    // Lấy 2 anh tài có điểm thấp nhất
     AnhTai diemthapnhat = anhTaiList.get(0);
     AnhTai diemthaphai = anhTaiList.get(1);
 
-    // Loại bỏ 2 thành viên
+    // Loại bỏ 2 anh tài
     anhTaiList.remove(diemthapnhat);
     anhTaiList.remove(diemthaphai);
 
