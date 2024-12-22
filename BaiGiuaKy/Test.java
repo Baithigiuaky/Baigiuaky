@@ -396,7 +396,60 @@ public class Test {
 		anhTaiList.add(Cuongseven);
 		for (AnhTai anhTai : anhTaiList) {
         	System.out.println(anhTai.ktraRank());
-
+			
+	ArrayList<AnhTai> ds1v2 = new ArrayList<AnhTai>();
+	ds1v2.add(PhanDinhTung);
+	ds1v2.add(NguyenTranDuyNhat);
+	ds1v2.add(TangPhuc);
+	ds1v2.add(LienBinhPhat);
+	ds1v2.add(STrongTrongHieu);
+	ds1v2.add(KayTran);
+	
+	ArrayList<AnhTai> ds2v2 = new ArrayList<AnhTai>();
+	ds2v2.add(BangKieu);
+	ds2v2.add(ThanhDuy);
+	ds2v2.add(BuiCongNam);
+	ds2v2.add(Binz);
+	ds2v2.add(ThienMinh);
+	ds2v2.add(DuyKhanh);
+	
+	ArrayList<AnhTai> ds3v2 = new ArrayList<AnhTai>();
+	ds3v2.add(JunPham);
+	ds3v2.add(HuyR);
+	ds3v2.add(HaLe);
+	ds3v2.add(TruongTheVinh);
+	ds3v2.add(KienUng);
+	ds3v2.add(BBTran);
+	
+	ArrayList<AnhTai> ds4v2 = new ArrayList<AnhTai>();
+	ds4v2.add(TuLong);
+	ds4v2.add(DinhTienDat);
+	ds4v2.add(QuocThien);
+	ds4v2.add(Cuongseven);
+	ds4v2.add(Rhymastic);
+	ds4v2.add(Soobin);
+	
+	BaiHat baihatn1v2 = new BaiHat("Giàu sang", "Rhymastic", null, null);
+	BaiHat baihatn2v2 = new BaiHat("Dẫu có lỗi lầm", "Hồ Hoài Anh", null, null);
+	BaiHat baihatn3v2 = new BaiHat("Tình yêu ngủ quêng", "Hoàng Tôn", null, null);
+	BaiHat baihatn4v2 = new BaiHat("Chợt nghe bước em về", "Quốc Vượng", null, null);
+	BaiHat baihatn5v2 = new BaiHat("Những kẻ mộng mơ", "Nguyễn Bảo Trọng", null, null);
+	BaiHat baihatn6v2 = new BaiHat("Bao tiền một mớ bình yên?", "14 Casper", null, null);
+	BaiHat baihatn7v2 = new BaiHat("Gót hồng Cao gót", "(ảo Phúc, Soobin,", null, null);
+	BaiHat baihatn8v2 = new BaiHat("Nếu một mai tôi bay lên trời", "Hứa Kim Tuyền", null, null);
+	
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN1v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN1v4.put(ds1v2, baihatn1v2);
+			
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN2v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN2v4.put(ds2v2, baihatn2v2);
+			
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN3v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN3v4.put(ds3v2, baihatn3v2);
+			
+	HashMap<ArrayList<AnhTai>, BaiHat> baihatN4v2 = new HashMap<ArrayList<AnhTai>, BaiHat>();
+	baihatN4v4.put(ds4v2, baihatn4v2);
+			
 			vog4
 		ArrayList<AnhTai> ds1v4 = new ArrayList<AnhTai>();
 	ds1v4.add(NekoLe);
