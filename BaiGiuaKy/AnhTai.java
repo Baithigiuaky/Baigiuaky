@@ -127,20 +127,5 @@ public class AnhTai implements Comparable<AnhTai>{
 	public int compareTo(AnhTai other) {
 		// TODO Auto-generated method stub
 		return Integer.compare(this.diemBinhChon, other.diemBinhChon);
-	}
-	public double tongDiem() {
-        return firePowerScore + diemcuaKhangia;
-    }
-	public void updateDiemBinhChon() {
-		 this.diemBinhChon = (int) tongDiem();
-    }
-	public String ktraRank() {
-        updateDiemBinhChon();
-        
-        if (diemBinhChon < 900) {
-            return name + " vao vong nguy hiem!";
-        } else {
-            return name + " duoc thang cap!";
-        }
-    }
+	}	
 }
