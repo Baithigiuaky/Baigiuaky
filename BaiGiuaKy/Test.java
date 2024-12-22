@@ -450,22 +450,7 @@ public class Test {
     anhTaiList1.add(KayTran);
     anhTaiList1.add(BangKieu);
     anhTaiList1.add(ThanhDuy);
-    anhTaiList1.add(BuiCongNam);
-    anhTaiList1.add(Binz);
-    anhTaiList1.add(ThienMinh);
-    anhTaiList1.add(DuyKhanh);
-    anhTaiList1.add(JunPham);
-    anhTaiList1.add(HuyR);
-    anhTaiList1.add(HaLe);
-    anhTaiList1.add(TruongTheVinh);
-    anhTaiList1.add(KienUng);
-    anhTaiList1.add(BBTran);
-    anhTaiList1.add(TuLong);
-    anhTaiList1.add(DinhTienDat);
-    anhTaiList1.add(QuocThien);
-    anhTaiList1.add(Cuongseven);
-    anhTaiList1.add(Rhymastic);
-    anhTaiList1.add(Soobin);
+    
 	
     AnhTai.removeTwoLowestFirePower(anhTaiList1);
     
