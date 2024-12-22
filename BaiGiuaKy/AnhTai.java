@@ -127,5 +127,22 @@ public class AnhTai implements Comparable<AnhTai>{
 	public int compareTo(AnhTai other) {
 		// TODO Auto-generated method stub
 		return Integer.compare(this.diemBinhChon, other.diemBinhChon);
-	}	
+	}
+	public static void removeTwoLowestFirePower(List<AnhTai> anhTaiList) {
+	    if (anhTaiList.size() <= 2) {
+	        System.out.println("danh sach bi loai!");
+	        return;
+	    }
+	    AnhTai diemthapnhat = anhTaiList.get(0);
+	    AnhTai diemthaphai = anhTaiList.get(1);
+	    
+	   
+	    System.out.println("Loai anh tai: " + diemthapnhat.getName() + " - Điem hoa luc: " + diemthapnhat.getFirePowerScore());
+	    System.out.println("Loai: " + diemthaphai.getName() + " - Điem hoa luc: " + diemthaphai.getFirePowerScore());
+	    
+	   
+	    anhTaiList.remove(diemthapnhat);
+	    anhTaiList.remove(diemthaphai);
+	}
+	}
 }
