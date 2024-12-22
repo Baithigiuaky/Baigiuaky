@@ -260,5 +260,136 @@ public class Test {
 		System.out.println("-------------------------------------");
 		System.out.println(g2);
 		
+		ArrayList<AnhTai> ds1 = new ArrayList<AnhTai>();
+		ds1.add(STrongTrongHieu);
+		ds1.add(LienBinhPhat);
+		ds1.add(NguyenTranDuyNhat);
+		ds1.add(TuanHung);
+		
+		ArrayList<AnhTai> ds2 = new ArrayList<AnhTai>();
+		ds2.add(ThanhTrung);
+		ds2.add(HaLe);
+		ds2.add(DoHoangHiep);
+		ds2.add(QuocThien);
+		ds2.add(KienUng);
+		
+		ArrayList<AnhTai> ds3 = new ArrayList<AnhTai>();
+		ds3.add(PhamKhanhHung);
+		ds3.add(TruongTheVinh);
+		ds3.add(JunPham);
+		ds3.add(BBTran);
+		ds3.add(HuyR);
+		
+		ArrayList<AnhTai> ds4 = new ArrayList<AnhTai>();
+		ds4.add(TienLuat);
+		ds4.add(DinhTienDat);
+		ds4.add(Rhymastic);
+		
+		ArrayList<AnhTai> ds5 = new ArrayList<AnhTai>();
+		ds5.add(Soobin);
+		ds5.add(Cuongseven);
+		ds5.add(TuLong);
+		
+		ArrayList<AnhTai> ds6 = new ArrayList<AnhTai>();
+		ds6.add(BangKieu);
+		ds6.add(HongSon);
+		ds6.add(StSonThach);
+		ds6.add(Binz);
+		
+		ArrayList<AnhTai> ds7 = new ArrayList<AnhTai>();
+		ds7.add(PhanDinhTung);
+		ds7.add(NekoLe);
+		ds7.add(KayTran);
+		ds7.add(TangPhuc);
+		ds7.add(DangKhoi);
+
+		ArrayList<AnhTai> ds8 = new ArrayList<AnhTai>();
+		ds8.add(ThienMinh);
+		ds8.add(BuiCongNam);
+		ds8.add(DuyKhanh);
+		ds8.add(ThanhDuy);
+		
+		BaiHat bai1 = new BaiHat("Ba kể con nghe & Dưới ánh đèn sân khấu", "Nguyễn Hải Phong, Hứa Kim Tuyền,", null, null);
+		HashMap<AnhTai, BaiHat> baihatnhom1 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom1.put(STrongTrongHieu, bai1);
+		baihatnhom1.put(LienBinhPhat, bai1);
+		baihatnhom1.put(NguyenTranDuyNhat, bai1);
+		baihatnhom1.put(TuanHung, bai1);
+		
+		BaiHat bai2 = new BaiHat("Một lần dang dở & Đi qua cầu vồng", "Nhật Ngân, Mặc Thế Nhân", null, null);
+		HashMap<AnhTai, BaiHat> baihatnhom2 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom2.put(ThanhTrung, bai2);
+		baihatnhom2.put(HaLe, bai2);
+		baihatnhom2.put(DoHoangHiep, bai2);
+		baihatnhom2.put(QuocThien, bai2);
+		baihatnhom2.put(KienUng, bai2);
+		
+		BaiHat bai3 = new BaiHat("Vợ người ta & Chuyện ba người", "Phan Mạnh Quỳnh, Quốc Dũng", null, null);
+		HashMap<AnhTai, BaiHat> baihatnhom3 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom3.put(PhamKhanhHung, bai3);
+		baihatnhom3.put(TruongTheVinh, bai3);
+		baihatnhom3.put(JunPham, bai3);
+		baihatnhom3.put(BBTran, bai3);
+		baihatnhom3.put(HuyR, bai3);
+		
+		BaiHat bai4 = new BaiHat("Lột xác & Chuyện nhỏ", "Nguyễn Hải Phong, Tuấn Khanh", null, null);
+		HashMap<AnhTai, BaiHat> baihatnhom4 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom4.put(TienLuat, bai4);
+		baihatnhom4.put(DinhTienDat, bai4);
+		baihatnhom4.put(Rhymastic, bai4);
+		
+		BaiHat bai5 = new BaiHat("Trống cơm", "Dân ca Bắc Bộ", "Charles, APJ", null);
+		HashMap<AnhTai, BaiHat> baihatnhom5 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom5.put(TienLuat, bai5);
+		baihatnhom5.put(DinhTienDat, bai5);
+		baihatnhom5.put(Rhymastic, bai5);
+		
+		BaiHat bai6 = new BaiHat("Tỉnh thức sau giấc ngủ đông", "Kai Đinh, Grey D", "Bin Z", null);
+		HashMap<AnhTai, BaiHat> baihatnhom6 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom6.put(BangKieu, bai6);
+		baihatnhom6.put(HongSon, bai6);
+		baihatnhom6.put(StSonThach, bai6);
+		baihatnhom6.put(Binz, bai6);
+		
+		BaiHat bai7 = new BaiHat("Dịu dàng đến từng phút giây & Bước đến bên em", "Lương Bằng Quang, Khắc Hưng", "Neko Lê", "Kay Trần");
+		HashMap<AnhTai, BaiHat> baihatnhom7 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom7.put(PhanDinhTung, bai7);
+		baihatnhom7.put(NekoLe, bai7);
+		baihatnhom7.put(KayTran, bai7);
+		baihatnhom7.put(TangPhuc, bai7);
+		baihatnhom7.put(DangKhoi, bai7);
+		
+		BaiHat bai8 = new BaiHat("Áo mùa đông & Trở về", "Đỗ Nhuận, Dương Thụ", " Bùi Công Nam", null);
+		HashMap<AnhTai, BaiHat> baihatnhom8 = new HashMap<AnhTai, BaiHat>();
+		baihatnhom8.put(ThienMinh, bai8);
+		baihatnhom8.put(BuiCongNam, bai8);
+		baihatnhom8.put(DuyKhanh, bai8);
+		baihatnhom8.put(ThanhDuy, bai8);
+		
+		Group gg1 = new Group("Dam Me" + "\n", baihatnhom1, "Ba kể con nghe & Dưới ánh đèn sân khấu");
+		System.out.println(g1);
+		System.out.println("-------------------------------------");
+		Group gg2 = new Group("Hat" + "\n", baihatnhom2, "Một lần dang dở & Đi qua cầu vồng");
+		System.out.println(g2);
+		System.out.println("-------------------------------------");
+		Group gg3 = new Group("Ngu Hanh" + "\n", baihatnhom3, "Vợ người ta & Chuyện ba người");
+		System.out.println(g3);
+		System.out.println("-------------------------------------");
+		Group gg4 = new Group("Tai Sinh" + "\n", baihatnhom4, "Lột xác & Chuyện nhỏ");
+		System.out.println(g4);
+		System.out.println("-------------------------------------");
+		Group gg5 = new Group("Sao sang" + "\n", baihatnhom5, "Trống cơm");
+		System.out.println(g5);
+		System.out.println("-------------------------------------");
+		Group gg6 = new Group("Xuan Ha Thu Dong" + "\n", baihatnhom6, "Tỉnh thức sau giấc ngủ đông");
+		System.out.println(g6);
+		System.out.println("-------------------------------------");
+		Group gg7 = new Group("KK" + "\n", baihatnhom7, "Dịu dàng đến từng phút giây & Bước đến bên em");
+		System.out.println(g7);
+		System.out.println("-------------------------------------");
+		Group gg8 = new Group("Xuong Rong" + "\n", baihatnhom8, "Áo mùa đông & Trở về");
+		System.out.println(g8);
+		System.out.println("-------------------------------------")
+			
 	}
 }
